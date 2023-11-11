@@ -1,0 +1,389 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to top, #0063a8  0%, #ffffff 100%)
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eaeaf2;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+}
+
+#menu-toggle {
+  display: none;
+ 
+}
+.navbar-toggler-icon{
+  background-image: url(/img/1486506264-hamburger-list-menu-options-bars-stack_81469.png);
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+  .row {
+    gap: 25px;
+  }
+  #menu-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #0976e407;
+    width: 100%;
+    flex-direction: column;
+  }
+ 
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    margin: 5px 0;
+  }
+}
+  .main-header{
+    margin-top: 50px;
+  }
+  .main-main{
+    margin-bottom: 100px;
+   /* background-image: linear-gradient(to top, #0063a8  0%, #ffffff 100%);
+    */
+  }
+  main .indu{
+    text-align: center;
+    margin-top: 55px;
+    font-size: 45px;
+    color: #fbfdff;
+    text-shadow: -5px 5px 10px #0063a8;
+  }
+  main .anio{
+    text-align: center;
+    font-size: 45px;
+    color: #fbfdff;
+    text-shadow: -5px 5px 10px black;
+  }
+  main .serv{
+    text-align: center;
+    margin-top: 55px;
+    color: rgb(9, 9, 9);
+    margin-bottom: 30px;    
+  }
+ 
+  .anima{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+main .vcards{
+  padding: 80px 100px;
+  background-color: white;
+}
+.scroll {
+	background-color: #000000e6;
+	transition: 4s;
+}
+.grow:hover
+{
+-webkit-transform: scale(2.3);
+-ms-transform: scale(2.3);
+transform: scale(1.04);
+transition: 0.4s;
+}
+.rotate:hover
+{
+-webkit-transform:rotate(-30deg);
+-ms-transform:rotate(-30deg);
+transform:rotate(-30deg);
+transition: 0.4s;
+}
+.striped {
+  background: linear-gradient(to bottom left, white 50%, #08549F 50%);
+}
+.card-body{
+  background-image: linear-gradient(to top, #0063a8  0%, #ffffff 100%);
+}
+.card-body .btn {
+  background-color: black;
+  color: white;
+}
+.card-body .btn:hover {
+  background-color: #0063a8;
+  color: white;
+}
+.card-body .card-text2{
+  color: #e52e2e;
+  font-size: 20px;
+  font-weight: 700;
+}
+ 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+ 
+}
+  .ser{
+   margin-right: 60px;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align:center;
+    color: white;
+  }
+  .serv{
+    
+    font-size: 45px;
+    color: #fbfdff;
+    text-shadow: -5px 5px 10px #0063a8;
+  }
+  
+  .indumen{
+    margin-bottom: 50px;
+  }
+  .service-card {
+    text-align: center;
+    padding: 20px;
+    color: #0063a8(255, 10, 10);
+    
+  }
+  .service-image {
+    max-width: 50%;
+    height: auto;
+  }
+  .fin{text-align: center;}
+  .main-footer{
+    position: relative;
+     margin-bottom: -200px;
+  }
+  /* cards two*/
+  .tit{
+    background: #0063a8;
+   
+  }
+  .titul{
+    text-align: center;
+    font-size: 55px;
+    padding-top: 25px;
+    color: #ffffff;
+    text-shadow: -5px 5px 10px #070707;
+    
+  }
+
+ .cardstwo{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0063a8; 
+ }
+ .cards{
+  position: relative;
+  width: 300px;
+  height: 380px;
+  margin: 20px;
+ }
+ .cards .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+ }
+ .cars .front{
+  transform: perspective(600px)rotatey(0deg);
+  box-shadow: 0 5px 10px #000;
+ }
+ .cards .front img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+ .cards .front h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color:black;
+  background-color:white;
+  text-align: center;
+  border-radius:  10px;
+ }
+ .cards .back{
+  transform: perspective(600px)rotateY(180deg);
+  background: rgb(3,35,54);
+  padding: 15px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+ }
+
+ .cards .back h3{
+   font-size: 30px;
+   margin-top: 20px;
+   letter-spacing: 2px;
+ }
+ .cards:hover .front{
+  transform: perspective(600px)rotateY(180deg);
+ }
+ .cards:hover .back{
+  transform: perspective(600px)rotateY(360deg);
+ }
+
+
+.card-header {
+  height: 170px;
+  width: 100%;
+  position: relative;
+  
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-login {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: auto;
+}
+
+.div-inp {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #E0F2F1;
+}
+
+.label {
+  position: absolute;
+  font-weight: 800;
+  top: 40px;
+  left: 2px;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.input::placeholder {
+  color: transparent;
+}
+
+.input:not(:placeholder-shown)~.label, .input:focus~.label {
+  top: 15px;
+  font-size: 14px;
+}
+
+
+.input {
+  width: 240px;
+  margin-top: 40px;
+  background: none;
+  outline: none;
+  border: none;
+  color: #E0F2F1;
+  padding-right: 10px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.iconPassword {
+  cursor: pointer;
+}
+
+.btn-login {
+  width: 220px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  margin-top: 25px;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 0.5px;
+  background-color: #08549F;
+}
+
+.form-footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+
+.form-link {
+  text-decoration: none;
+  color: #1212d1;
+}
+
+
+
+@media screen and (width >= 768px){
+  .wrapper {
+      width: 380px;
+  }
+}
+
